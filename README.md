@@ -34,8 +34,8 @@ optionally, rewrite SAVE_COLOR_DIR and SAVE_BINARY_DIR.
 
 - demo.py
 ```
-python demo.py --model_name * model name *
-python demo.py --model_name *model name* --save_bbox --save_color_mask --save_binary_mask --save_coco_json --output_dir *output dir name*
+python demo.py --model_name  [model name]
+python demo.py --model_name [model name] --save_bbox --save_color_mask --save_binary_mask --save_coco_json --output_dir [output dir name]
 ```
 
 ## Training
@@ -53,7 +53,7 @@ Early stopping epoch is set to 50 by default, you can set your own epoch.
 
 ```
 python main.py
-python main.py --wandb --load_model *model name* --early_stopping 100
+python main.py --wandb --load_model [model name] --early_stopping 100
 ```
 
 If you want to use cross validation, main_cv.py is usable.
